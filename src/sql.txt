@@ -1,0 +1,125 @@
+CREATE TABLE student
+(
+    id   INT PRIMARY KEY,
+    name VARCHAR,
+    age  INT
+);
+
+INSERT INTO student(id, name, age)
+values (2, 'John', 55),
+       (4, 'Johnson', 58),
+       (3, 'Kate', 58);
+
+CREATE TABLE myComputers
+(
+    id            INT,
+    model         VARCHAR(50),
+    companiesName CHAR(50),
+    ssd_computer  INT,
+    prosessor     CHAR(50)
+);
+INSERT INTO myComputers(id, model, companiesName, ssd_computer, prosessor)
+VALUES (1, 'Lenovo X5', 'Lenovo Corparetion', 552, 'RYZEN-5'),
+       (2, 'Dell', 'Packard Bell', 552, '4');
+
+CREATE TABLE myCat
+(
+    id         INT  PRIMARY KEY,
+    name       VARCHAR(30),
+    color      VARCHAR NOT NULL,
+    cats_Breed VARCHAR
+);
+INSERT INTO myCat(id, name, color, dogs_Breed)
+VALUES (2, 'Lolly', 'white', 'Балийская кошка'),
+        (3, 'Daisy', 'black', 'Турецкий ван');
+
+CREATE TABLE myFavoriteBooks(
+    id  SERIAL PRIMARY KEY,
+    booksName VARCHAR NOT NULL,
+    booksAuthor VARCHAR,
+    printingHousee VARCHAR NOT NULL,
+    yearOFpublication INT
+);
+INSERT INTO myFavoriteBooks(booksName,booksAuthor, printingHousee,yearOFpublication)
+VALUES ('Гордость и предубеждения','Jane Eyre', 'Альянс пресс', 1998),
+ ( 'Last lect', 'Randy Pausch', 'New York Times', 2005),
+ ( 'Война и мир','Лев Толстой', 'Москва', 1912 ),
+ ( 'Адам болгум келет', 'Т. Касымбеков', 'Мурас басмаканасы', 2020);
+
+CREATE TABLE myFavoriteMovie(
+    id  INT,
+    nameOFMovie VARCHAR,
+    issuingCountry VARCHAR,
+    genreOfCinema VARCHAR,
+    directorOfFilm VARCHAR,
+    studio VARCHAR
+);
+INSERT INTO myFavoriteMovie(id, nameOFMovie, issuingCountry, genreOfCinema, directorOfFilm,studio)
+    VALUES(1,'Spider man', 'USA', 'Fantasts', 'Maicle Duglas', 'Marvel'),
+           (2, 'Love Story in Harvard', 'Korea', 'Drama', 'Kim son Chok','KoreasMovies');
+
+CREATE TABLE myUniversity(
+  id INT,
+  universitiesName VARCHAR NOT NULL,
+  studentsQuantity INT,
+  directionOfuni VARCHAR
+);
+INSERT INTO myUniversity(id,universitiesName, studentsQuantity,directionOfuni)
+VALUES (1, 'I. ARABAEV UNIVERSITY', 5000, 'SCIENCE'),
+ (3, 'MEDICAL ACADEMY', 10000, 'MEDICINE'),
+ (2, 'ATA-TURK ALA TOO UNIVERSITY', 2000, 'LIBERAL ARTS');
+
+CREATE  TABLE myFlovers(
+    id INT,
+    floversName VARCHAR,
+    floversColor VARCHAR,
+    floversQuantyty INT
+);
+INSERT INTO myFlovers(id, floversName, floversColor, floversQuantyty)
+VALUES(2, 'Rose', 'red', 125),
+      (3, 'Romashka', 'white', 350),
+      (4, 'Geran', 'purple', 700) ;
+
+CREATE TABLE travelCountry(
+    id INT,
+    countriesName VARCHAR,
+    travelPrice INT,
+    countries_Language TEXT
+);
+INSERT INTO travelCountry(countriesName, travelPrice, countries_Language)
+VALUES (1, 'Turkey', 800, 'turkish' ),
+       (2, 'Dubay', 1200, 'arabic' ),
+       (3, 'Irelan', 7000, 'english' );
+
+CREATE TABLE myNiece(
+    id INT,
+    niecesName VARCHAR,
+    birthOfMyNiece SMALLINT
+);
+INSERT INTO myNiece(id, niecesName, birthOfMyNiece)
+VALUES (1,'Sumaya', 11-07-2010),
+ (2,'Saida', 01-08-2012),
+ (3,'Perizat', 01-08-2018);
+
+CREATE TABLE myCourse(
+    id INT,
+    coursesName VARCHAR,
+    languages VARCHAR,
+    price TEXT
+
+);
+INSERT INTO myCourse(id, coursesName, languages, price)
+VALUES (1, 'Peaksoft', 'Java, JS', 12000),
+ (2, 'IT Academy', 'PYTON', 8000);
+
+
+
+
+
+
+
+
+
+
+
+
